@@ -1,0 +1,98 @@
+/*Basic*/
+body{
+	padding-top:40px;
+	padding-bottom: 60px;
+}
+
+a {
+	color:#e7402f;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+a:hover {
+	color:#e7402f;
+	text-decoration:none;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+.jumbotron{
+	padding: 20px 35px 20px 35px !important;
+}
+.tab-pane{
+	padding: 5px !important;
+}
+
+/*Custom Style*/
+.custom-ml{
+	margin-left: 30px !important;
+}
+.custom-mt{
+	margin-top: 10px !important;
+}
+.custom-border{
+	border: 1px dotted #585858;
+}
+.custom-padding{
+	padding:5px 5px 15px 5px;
+}
+
+/*OptionList*/
+.overFlow{
+	overflow: scroll;
+	padding:4px;
+	margin-bottom:20px;
+	border-radius:6px;
+	background:#FAFAFA;
+	width:400px;
+	height:200px;
+}
+.controlBox{
+	margin:5px auto 10px auto;
+	width:100%;
+}
+
+/*Displaying*/
+#holdBox{
+	width:505px;
+	height:437px;
+	margin-bottom: 10px;
+	z-index: -2;
+}
+#previewer{
+    background:#FBF5EF;
+	width:505px;
+	height:437px;
+	/*overflow: scroll;*/
+	position:absolute;
+	box-shadow:0px 0px 10px black;
+	-wekit-box-shadow: 0px 0px 10px black;
+	-moz-box-shadow:0px 0px 10px black;
+	border-radius:4px;
+	margin-bottom: 10px;
+}
+#previewer img{position:absolute;cursor:move;}
+
+/*DataList Testing*/
+.form-control {
+	width: 500px !important;
+}
+.data_display{
+	padding: 10px;
+	margin-top: 15px;
+	width: 1023px;
+	height: 135px;
+}
+.data_display span{
+	float: left;
+	width: 500px;	
+}
+#outputData{
+	float: left;
+	margin-right: 20px;
+	width: 480px !important;
+}

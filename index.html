@@ -1,0 +1,402 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.iDialog.js"></script>
+    <script src="js/myjavascript.js"></script>
+    <script src="js/imagezoom.js"></script>
+    <link rel="stylesheet" href="css/custom.css" media="all" type="text/css">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="CDN-//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"-->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!--script src="CDN-//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <!--Container-->
+	<div class="container">
+		
+		<!--Creating a Jumbotron-->
+		<div class="jumbotron">
+			<!--Grid System-->
+			<div class="row">
+				<!------------------>
+		        <!--Displaying Box-->
+		        <!------------------>
+				<div class="col-sm-6 custom-ml">
+					<div id="holdBox">
+						<section id="previewer">
+                            <!--<img alt="bg1" class="bg-warning" src="img/bg/bg1.jpg" width="505px" height="437px">-->
+                        </section>
+					</div>
+
+					<a id="bg1" class="btn col-sm-4 custom-mt"><img alt="bg1" class="bg-warning" src="img/bg/bg1.jpg" width="135px" height="100px"></a>
+					<a id="bg2" class="btn col-sm-4 custom-mt"><img alt="bg2" class="bg-warning" src="img/bg/bg2.jpg" width="135px" height="100px"></a>
+					<a id="bg3" class="btn col-sm-4 custom-mt"><img alt="bg3" class="bg-warning" src="img/bg/bg3.jpg" width="135px" height="100px"></a>
+				</div>
+				
+				<!------------------------------------------>
+		        <!----------------Option list--------------->
+		        <!------------------------------------------>
+				<div class="col-sm-5  custom-ml bg-info custom-padding">
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a href="#monitor" data-toggle="tab">Monitor</a></li>
+						<li class=""><a href="#case" data-toggle="tab">Case</a></li>
+						<li class=""><a href="#keyboard" data-toggle="tab">Keyboard</a></li>
+						<li class=""><a href="#mouse" data-toggle="tab">Mouse</a></li>
+						<li class=""><a href="#speaker" data-toggle="tab">Speaker</a></li>
+					</ul>
+					<!-------------------------->
+					<!--Individual controlling-->
+					<!-------------------------->
+					<div id="myTabContent" class="tab-content">
+						<!--For Monitor-->
+						<div class="tab-pane fade active in" id="monitor">
+							<strong>Products List:</strong>
+			                <div class='overFlow'>
+			                  <input type='checkbox' class='products' name='monitor' value='18.5_Acer_G196HQL' onclick="return CountClick(this.name)";> Acer G196HQL 18.5-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='19_Asus_VE198T' onclick="return CountClick(this.name)";> Asus VE198T 19-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='19_LG_L1942SE'onclick="return CountClick(this.name)" ;> LG L1942SE 19-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='19_Phillips_19S4LCB' onclick="return CountClick(this.name)";> Phillips 19S4LCB 19-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='20_Acer_G206HQL' onclick="return CountClick(this.name)";> Acer G206HQL 20-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='20_Asus_VE208T' onclick="return CountClick(this.name)";> Asus VE208T 20-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='20_Samsung_S20D300HY' onclick="return CountClick(this.name)";> Samsung S20D300HY 20-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='20_Viewsonic_VA-2046M' onclick="return CountClick(this.name)";> Viewsonic VA-2046M 20-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='21.5_Dell_S2240' onclick="return CountClick(this.name)";> Dell S2240 21.5-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='21.5_Samsung_S22D300HY' onclick="return CountClick(this.name)";> Samsung S22D300HY 21.5-inch
+			                  <br/>
+			                  <input type='checkbox' class='products' name='monitor' value='21.5_Viewsonic_VX-2270' onclick="return CountClick(this.name)";> Viewsonic VX-2270 21.5-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='22_Acer_P225HQ'onclick="return CountClick(this.name)" ;> Acer P225HQ 22-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='22_Asus_VS229DA-W'onclick="return CountClick(this.name)" ;> Asus VS229DA-W 22-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='22_Samsung_S22C330HW'onclick="return CountClick(this.name)" ;> Samsung S22C330HW 22-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='22_LG_IPS225V'onclick="return CountClick(this.name)" ;> LG IPS225V 22-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_LG_IPS234T-PN'onclick="return CountClick(this.name)" ;> LG IPS234T-PN 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_Dell_S2340'onclick="return CountClick(this.name)" ;> Dell S2340 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_LG_D2343P'onclick="return CountClick(this.name)" ;> LG D2343P 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_Acer_S235HL'onclick="return CountClick(this.name)" ;> Acer S235HL 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_Asus_VX239H'onclick="return CountClick(this.name)" ;> Asus VX239H 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_LG_IPS237L-BN'onclick="return CountClick(this.name)" ;> LG IPS237L-BN 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_Philips_234CL2SB 93'onclick="return CountClick(this.name)" ;> Philips 234CL2SB 93 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='23_Philips_237EQ'onclick="return CountClick(this.name)" ;> Philips 237EQ 23-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Acer_S240HL'onclick="return CountClick(this.name)" ;> Acer S240HL 24-inch<br />
+			                  <input type='checkbox' class='products' name='monitor' value='24_Acer_GN246HL'onclick="return CountClick(this.name)" ;> Acer GN246HL 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Dell_U2412M'onclick="return CountClick(this.name)" ;> Dell U2412M 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Dell_UZ2215H'onclick="return CountClick(this.name)" ;> Dell UZ2215H 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Philips_241P3LYEB'onclick="return CountClick(this.name)" ;> Philips 241P3LYEB 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Philips_245C5QHAW'onclick="return CountClick(this.name)" ;> Philips 245C5QHAW 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Philips_248C3LSB'onclick="return CountClick(this.name)" ;> Philips 248C3LSB 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Samsung_S24D590PL'onclick="return CountClick(this.name)" ;> Samsung S24D590PL 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Samsung_S24D360HL'onclick="return CountClick(this.name)" ;>Samsung S24D360HL 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='24_Samsung_S24E390HL'onclick="return CountClick(this.name)" ;> Samsung S24E390HL 24-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='27_Dell_S2740L'onclick="return CountClick(this.name)" ;> Dell S2740L 27-inch<br/>
+			                  <input type='checkbox' class='products' name='monitor' value='27_LG_27EA83-B'onclick="return CountClick(this.name)" ;> LG 27EA83-B 27-inch<br/><br/>
+			                </div>
+			                <div class='controlBox'>
+			                  <strong>Monitor Diractions:</strong><br>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(1,'monitorid')";>D1</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(2,'monitorid')";>D2</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(3,'monitorid')";>D3</button>
+							  
+							  <label class="radio-inline monitorRadio">
+							  	<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m1" disabled = true> monitor1
+							  </label>
+							  <label class="radio-inline monitorRadio">
+							  	<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="m2" disabled = true> monitor2
+							  </label>
+							  <label class="radio-inline monitorRadio">
+							  	<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="m3" disabled = true> monitor3
+							  </label>
+							  
+			                  <br />
+			                </div>
+						</div>
+						
+						<!--For Case-->
+						<div class="tab-pane fade" id="case">
+							<strong>Products List:</strong>
+			                <div class='overFlow'>
+			                  <input type='checkbox' name='case' class='products' value='AZZA_Orion_202EVO' onclick="return CountClick(this.name)";> AZZA Orion 202EVO<br>
+			                  <input type='checkbox' name='case' class='products' value='CMStorm_Enforcer' onclick="return CountClick(this.name)";> CMStorm Enforcer<br>
+			                  <input type='checkbox' name='case' class='products' value='CMStorm_Stryker' onclick="return CountClick(this.name)";> CMStorm Stryker<br>
+			                  
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Cosmos' onclick="return CountClick(this.name)";> Coolermaster Cosmos<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Destroyer2' onclick="return CountClick(this.name)";> Coolermaster Destroyer2<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Elite_431' onclick="return CountClick(this.name)";> Coolermaster Elite 431<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Force_500' onclick="return CountClick(this.name)";> Coolermaster Force 500<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_HAF_912' onclick="return CountClick(this.name)";> Coolermaster HAF 912<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_HAF_X' onclick="return CountClick(this.name)";> Coolermaster HAF X<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_N400' onclick="return CountClick(this.name)";> Coolermaster N400<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Silencio_652S' onclick="return CountClick(this.name)";> Coolermaster Silencio 652S<br>
+			                  <input type='checkbox' name='case' class='products' value='Coolermaster_Trooper' onclick="return CountClick(this.name)";> Coolermaster Trooper<br>
+			                  <input type='checkbox' name='case' class='products' value='Corsair_550D' onclick="return CountClick(this.name)";> Corsair 550D<br/>
+			                  <input type='checkbox' name='case' class='products' value='Corsair_Graphite_Series_600T_Mesh_White_Special' onclick="return CountClick(this.name)";> Corsair Graphite Series 600T Mesh White Special<br/>
+			                  <input type='checkbox' name='case' class='products' value='Corsair_Graphite_Series_760T' onclick="return CountClick(this.name)";> Corsair Graphite Series 760T<br/>
+			                  <input type='checkbox' name='case' class='products' value='Corsair_Vengeance_C70' onclick="return CountClick(this.name)";> Corsair Vengeance C70<br>
+			                  <input type='checkbox' name='case' class='products' value='Gamemax_Little angle' onclick="return CountClick(this.name)";> Gamemax Little angle<br>
+			                  
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Apollo' onclick="return CountClick(this.name)";> NZXT Apollo<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_H2' onclick="return CountClick(this.name)";> NZXT H2<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_H440' onclick="return CountClick(this.name)";> NZXT H440<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_H630' onclick="return CountClick(this.name)";> NZXT H630<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Lexa_S' onclick="return CountClick(this.name)";> NZXT Lexa S<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_M59' onclick="return CountClick(this.name)";> NZXT M59<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Phantom240' onclick="return CountClick(this.name)";> NZXT Phantom240<br> 
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Phantom410_White' onclick="return CountClick(this.name)";> NZXT Phantom410 White<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_S340' onclick="return CountClick(this.name)";> NZXT S340<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Source_210' onclick="return CountClick(this.name)";> NZXT Source 210<br>
+			                  <input type='checkbox' name='case' class='products' value='NZXT_Tempest410' onclick="return CountClick(this.name)";> NZXT Tempest410<br>
+			                  
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Classic_CS2_1333' onclick="return CountClick(this.name)";> Sentey Classic CS2 1333<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Cobra_GS_6010' onclick="return CountClick(this.name)";> Sentey Cobra GS 6010<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Eagle_GS_6020' onclick="return CountClick(this.name)";> Sentey Eagle GS 6020<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Gaming_BX1_4284' onclick="return CountClick(this.name)";> Sentey Gaming BX1 4284<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Optimus' onclick="return CountClick(this.name)";> Sentey Optimus<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_PRO_CS1_1399' onclick="return CountClick(this.name)";> Sentey PRO CS1 1399<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Slim_Itx_SS4_2430' onclick="return CountClick(this.name)";> Sentey Slim Itx SS4 2430<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Slim_SS1_2422' onclick="return CountClick(this.name)";> Sentey Slim SS1 2422<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Slim_SS1_2429' onclick="return CountClick(this.name)";> Sentey Slim SS1 2429<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Slim_SS1-2424' onclick="return CountClick(this.name)";> Sentey Slim SS1-2424<br> 
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Stealth_GS_6008' onclick="return CountClick(this.name)";> Sentey Stealth GS 6008<br>
+			                  <input type='checkbox' name='case' class='products' value='Sentey_Z_Tron_GS_6006' onclick="return CountClick(this.name)";> Sentey Z Tron GS 6006<br><br>
+			                  
+			                </div>
+			                <div class='controlBox'>  
+			                  <strong>Case Diractions:</strong><br>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(1,'caseid')";>D1</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(2,'caseid')";>D2</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(3,'caseid')";>D3</button>
+			                  <br />
+			                </div>
+						</div>
+						
+						<!--For Keyboard-->
+						<div class="tab-pane fade" id="keyboard">
+							<strong>Products List:</strong>
+			                <div class='overFlow'>
+			                  <input type='checkbox' class='products' name='keyboard' value='Cherry_G85' onclick="return CountClick(this.name)";> Cherry G85<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Cherry_JK0300' onclick="return CountClick(this.name)";> Cherry JK0300<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Cherry_MX_Board_2.0' onclick="return CountClick(this.name)";> Cherry MX Board 2.0<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Cherry_MX_Board_3.0' onclick="return CountClick(this.name)";> Cherry MX Board 3.0<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='CMStorm_Devastator' onclick="return CountClick(this.name)";> CMStorm Devastator<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='CMStorm_Quick_Fire' onclick="return CountClick(this.name)";> CMStorm Quick Fire<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='CMStorm_Trigger' onclick="return CountClick(this.name)";> CMStorm Trigger<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Corsair_K70' onclick="return CountClick(this.name)";> Corsair K70<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Corsair_K90' onclick="return CountClick(this.name)";> Corsair K90<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Corsair_K95' onclick="return CountClick(this.name)";> Corsair K95<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_G19' onclick="return CountClick(this.name)";> Logitech G19<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_G103' onclick="return CountClick(this.name)";> Logitech G103<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_G105' onclick="return CountClick(this.name)";> Logitech G105<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_G510' onclick="return CountClick(this.name)";> Logitech G510<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_G910' onclick="return CountClick(this.name)";> Logitech G910<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K120' onclick="return CountClick(this.name)";> Logitech K120<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K200' onclick="return CountClick(this.name)";> Logitech K200<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K230' onclick="return CountClick(this.name)";> Logitech K230<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K270' onclick="return CountClick(this.name)";> Logitech K270<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K270_Wireless_Key_Board' onclick="return CountClick(this.name)";> Logitech K270 Wireless Key Board<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K310' onclick="return CountClick(this.name)";> Logitech K310<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Logitech_K360' onclick="return CountClick(this.name)";> Logitech K360<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='Microsoft_Comfort_Curve_Keyboard_2000' onclick="return CountClick(this.name)";> Microsoft Comfort Curve Keyboard 2000<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Microsoft_Sculpt_Comfort_Desktop' onclick="return CountClick(this.name)";> Microsoft Sculpt Comfort Desktop<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Microsoft_Wired_600_Keyboard' onclick="return CountClick(this.name)";> Microsoft Wired 600 Keyboard<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Anansi' onclick="return CountClick(this.name)";> Razer Anansi<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Arctosa' onclick="return CountClick(this.name)";> Razer Arctosa<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Arctosa_Gaming_Keyboard' onclick="return CountClick(this.name)";> Razer Arctosa Gaming Keyboard<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Black_Widow_gaming_Keyboard' onclick="return CountClick(this.name)";> Razer Black Widow gaming Keyboard<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Black_widow_Ultimate_ME3' onclick="return CountClick(this.name)";> Razer Black widow Ultimate ME3<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Cyclosa' onclick="return CountClick(this.name)";> Razer Cyclosa<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Deathetalker' onclick="return CountClick(this.name)";> Razer Deathetalker<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_Talantula' onclick="return CountClick(this.name)";> Razer Talantula<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='Razer_LycosalMirror_keyboard' onclick="return CountClick(this.name)";> Razer LycosalMirror keyboard<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_6GV2' onclick="return CountClick(this.name)";> SteelSeries 6GV2<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_7G' onclick="return CountClick(this.name)";> SteelSeries 7G<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_Apex' onclick="return CountClick(this.name)";> SteelSeries Apex<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_Merc_Stealth' onclick="return CountClick(this.name)";> SteelSeries Merc Stealth<br/>
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_Shift' onclick="return CountClick(this.name)";> SteelSeries Shift<br/>
+			                  
+			                  <input type='checkbox' class='products' name='keyboard' value='SteelSeries_Zboard' onclick="return CountClick(this.name)";> SteelSeries Zboard<br><br>
+			                </div>
+			                <div class='controlBox'>
+			                  <strong>Keyboard Diractions:</strong><br>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(1,'keyboardid')";>D1</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(2,'keyboardid')";>D2</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(3,'keyboardid')";>D3</button>
+			                  <br />
+			                </div>
+						</div>
+						
+						<!--For Mouse-->
+						<div class="tab-pane fade" id="mouse">
+							<strong>Products List:</strong>
+			                <div class='overFlow'>
+			                  <input type='checkbox' class='products' name='mouse'  value='Dell_MS111' onclick="return CountClick(this.name)";> Dell MS111 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='HP_FM500' onclick="return CountClick(this.name)";> HP FM500 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='HP_X1000' onclick="return CountClick(this.name)";> HP X1000 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='HP_X3000' onclick="return CountClick(this.name)";> HP X3000<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='i-rocks_IM1.2' onclick="return CountClick(this.name)";> i-rocks IM1.2<br/>			                  		  <input type='checkbox' class='products' name='mouse'  value='i-rocks_IM3_WE' onclick="return CountClick(this.name)";> i-rocks IM3 WE<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G1' onclick="return CountClick(this.name)";> Logitech G1 <br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G3' onclick="return CountClick(this.name)";> Logitech G3 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G300' onclick="return CountClick(this.name)";> Logitech G300 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G402' onclick="return CountClick(this.name)";> Logitech G402 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G500' onclick="return CountClick(this.name)";> Logitech G500<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G502' onclick="return CountClick(this.name)";> Logitech G502<br/>			                  		  <input type='checkbox' class='products' name='mouse'  value='Logitech_G602' onclick="return CountClick(this.name)";> Logitech G602<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_G700' onclick="return CountClick(this.name)";> Logitech G700<br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_M325' onclick="return CountClick(this.name)";> Logitech M325<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_M525' onclick="return CountClick(this.name)";> Logitech M525 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_M705' onclick="return CountClick(this.name)";> Logitech M705 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_M905' onclick="return CountClick(this.name)";> Logitech M905<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Logitech_V470' onclick="return CountClick(this.name)";> Logitech V470<br/>			                  		  <input type='checkbox' class='products' name='mouse'  value='Microsoft_Arc_Black' onclick="return CountClick(this.name)";> Microsoft Arc Black<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Microsoft_Comfort_Mouse_4500' onclick="return CountClick(this.name)";> Microsoft Comfort Mouse 4500<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Microsoft_NB_Optical_Mouse_3000' onclick="return CountClick(this.name)";> MS Optical 3000 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Microsoft_Sculpt_Mobile_Mouse' onclick="return CountClick(this.name)";> Microsoft Sculpt Mobile Mouse <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Microsoft_Wireless_Mouse_3500' onclick="return CountClick(this.name)";> Microsoft Wireless Mouse 3500 <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='Microsoft_Wireless_Mouse_4000_White' onclick="return CountClick(this.name)";> Microsoft Wireless Mouse 4000 White<br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_Abyssus_gaming_mouse' onclick="return CountClick(this.name)";> Razer Abyssus Gaming <br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_death_adder_2013' onclick="return CountClick(this.name)";> Razer Death Adder 2013 <br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_death_adder_refresh' onclick="return CountClick(this.name)";> Razer Death Adder Refresh<br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_imperator_gaming_mouse' onclick="return CountClick(this.name)";> Razer Imperator Gaming <br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_Orochi_2013_elite_mouse' onclick="return CountClick(this.name)";> Razer Orochi 2013 Elite<br/>
+			                  
+			                  <input type='checkbox' class='products' name='mouse'  value='Razer_taipan_Gaming_mouse' onclick="return CountClick(this.name)";> Rzer Taipan Gaming <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Kana_V2_Black' onclick="return CountClick(this.name)";> SteelSeries Kana V2 Black <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Kinzu_V3' onclick="return CountClick(this.name)";> SteelSeries Kinzu V3<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Rival' onclick="return CountClick(this.name)";> SteelSeries Rival<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Sensei_Fnatic' onclick="return CountClick(this.name)";> SteelSeries Sensei Fnatic<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Sensei_Frost Blue' onclick="return CountClick(this.name)";> SteelSeries Sensei Frost Blue <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Sensei_MLG' onclick="return CountClick(this.name)";> SteelSeries Sensei MLG <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Sensei_Navi' onclick="return CountClick(this.name)";> SteelSeries Sensei Navi<br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Sensei_RAW' onclick="return CountClick(this.name)";> SteelSeries Sensei RAW <br/>
+			                  <input type='checkbox' class='products' name='mouse'  value='SteelSeries_Xai_Laser' onclick="return CountClick(this.name)";> SteelSeries Xai Laser <br><br>
+			                  
+			                </div>
+			                <div class='controlBox'>
+			                  <strong>Mouse Diractions:</strong><br>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(1,'mouseid')";>D1</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(2,'mouseid')";>D2</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(3,'mouseid')";>D3</button>
+			                  <br />
+			                </div>
+						</div>
+						
+						<!--For Speaker-->
+						<div class="tab-pane fade" id="speaker">
+							<strong>Products List:</strong>
+			                <div class='overFlow'>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_151' onclick="return CountClick(this.name)";> Bose 151 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_251' onclick="return CountClick(this.name)";> Bose 251 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_Companion_2_Series_2' onclick="return CountClick(this.name)";> Bose Companion 2 Series 2 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_Companion_2_Series_3' onclick="return CountClick(this.name)";> Bose Companion 2 Series 3 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_Companion_5' onclick="return CountClick(this.name)";> Bose Companion 5 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_Companion_20' onclick="return CountClick(this.name)";> Bose Companion 20 <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Bose_Computer_MusicMonitor' onclick="return CountClick(this.name)";> Bose Computer MusicMonitor <br/>
+				                <input type='checkbox' class='products' name='speaker'  value='Creative_SBS_A220' onclick="return CountClick(this.name)";> Creative SBS A220 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_SBS_A320' onclick="return CountClick(this.name)";> Creative SBS A320 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_SBS_A520' onclick="return CountClick(this.name)";> Creative SBS A520 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_T4' onclick="return CountClick(this.name)";> Creative T4 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_T12' onclick="return CountClick(this.name)";> Creative T12 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_T30' onclick="return CountClick(this.name)";> Creative T30 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Creative_T50' onclick="return CountClick(this.name)";> Creative T50 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_E10' onclick="return CountClick(this.name)";> Edifier E10 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_E25' onclick="return CountClick(this.name)";> Edifier E25 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_E30' onclick="return CountClick(this.name)";> Edifier E30 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_E3350' onclick="return CountClick(this.name)";> Edifier E3350 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_M20' onclick="return CountClick(this.name)";> Edifier M20 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_R10U' onclick="return CountClick(this.name)";> Edifier R10U <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_R201_T06' onclick="return CountClick(this.name)";> Edifier R201 T06 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_R1000_T4' onclick="return CountClick(this.name)";> Edifier R1000 T4 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_R1600_T3' onclick="return CountClick(this.name)";> Edifier R1600 T3 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Edifier_R2000DB' onclick="return CountClick(this.name)";> Edifier R2000DB <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_LS11' onclick="return CountClick(this.name)";> Logitech LS11 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_LS21' onclick="return CountClick(this.name)";> Logitech LS21 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_X540' onclick="return CountClick(this.name)";> Logitech X540 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z110' onclick="return CountClick(this.name)";> Logitech Z110 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z130' onclick="return CountClick(this.name)";> Logitech Z130 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z200' onclick="return CountClick(this.name)";> Logitech Z200 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z320' onclick="return CountClick(this.name)";> Logitech Z320 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z506' onclick="return CountClick(this.name)";> Logitech Z506 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z520' onclick="return CountClick(this.name)";> Logitech Z520 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z523' onclick="return CountClick(this.name)";> Logitech Z523 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z553' onclick="return CountClick(this.name)";> Logitech Z553 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Logitech_Z623' onclick="return CountClick(this.name)";> Logitech Z623 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Philips_SPA1330' onclick="return CountClick(this.name)";> Philips SPA1330 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Philips_SPA2210' onclick="return CountClick(this.name)";> Philips SPA2210 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Philips_SPA4210' onclick="return CountClick(this.name)";> Philips SPA4210 <br/>
+								<input type='checkbox' class='products' name='speaker'  value='Philips_SPA8210' onclick="return CountClick(this.name)";> Philips SPA8210 <br/>
+			                </div>
+			                <div class='controlBox'>
+			                  <strong>Speaker Diractions:</strong><br>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(1,'speakerid')";>D1</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(2,'speakerid')";>D2</button>
+			                  <button type="button" class="btn btn-default btn-xs" onclick="javascript:changeDirection(3,'speakerid')";>D3</button>			                  <br />
+			                </div>
+						</div>
+					</div>
+					<!---------------------->
+					<!--Global controlling-->
+					<!---------------------->	
+					<div class="bg-warning custom-padding text-center ">
+						<center><ins><h4>Global Control</h4></ins></center>
+						<strong>Size:</strong>
+			            <span><a title='Zoom In' class="zomming btn" id='zoomIn' onclick="javascript:zoom('+')";><img src='img/zin.png' /></a></span>
+			            <span><a title='Zoom Out' class="zomming btn" id='zoomOut' onclick="javascript:zoom('-')";><img src='img/zout.png' /></a></span>
+			            <span><a title='Cancel' class="zomming btn" id='cancel' onclick="javascript:zoom('')";><img src='img/cancel.png' /></a></span><br><br>
+							
+			            <strong>Z-Index:</strong>
+						<input id="zOrder" type="number"><br>
+						<div class="custom-mt">
+							<button type="button" class="btn btn-default btn-xs" onclick="zIndexSetting('zOrder','monitorid')";>Set Monitor</button>
+							<button type="button" class="btn btn-default btn-xs" onclick="zIndexSetting('zOrder','caseid')">Set Case</button>
+							<button type="button" class="btn btn-default btn-xs" onclick="zIndexSetting('zOrder','keyboardid')">Set KeyBoard</button>
+							<button type="button" class="btn btn-default btn-xs" onclick="zIndexSetting('zOrder','mouseid')">Set Mouse</button>
+							<button type="button" class="btn btn-default btn-xs" onclick="zIndexSetting('zOrder','speakerid')">Set Speaker</button>
+						</div>							
+						<div class="custom-mt">
+							<strong>Main Processing:</strong>
+							<button type="button" class="btn btn-success btn-sm" onclick="javascript:displayFunction();">Show Images</button>
+							<button type="button" class="btn btn-success btn-sm" onclick="showData();">Show Data</button>
+							<button type="button" class="btn btn-success btn-sm" onclick="runInput();">Run Data</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!----------------------------------------->
+			<!--   Datalist displaying and processing-->
+			<!----------------------------------------->
+			<div class="data_display bg-info custom-ml"><span>Output Data:</span><span>Input Data:</span><br><textarea id="outputData" class="form-control" rows="4" disabled></textarea><textarea id="inputData" class="form-control" rows="4"></textarea></div>
+			
+			
+		</div>
+	</div>
+  </body>
+</html>
